@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ========제목======== */
+.head {
+  position: relative;
+  margin-bottom: 20px;
+}
+.head h1 {
+  letter-spacing: 6px;
+  width: 320px;
+  height: 45px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 45px;
+}
+
+.backgroundGauge::after {
+  content: "";
+  width: 0;
+  height: 45px;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 50, 50, 1) 0%,
+    rgba(255, 159, 50, 1) 14%,
+    rgba(240, 255, 40, 1) 29%,
+    rgba(96, 255, 48, 1) 46%,
+    rgba(50, 159, 255, 1) 66%,
+    rgba(50, 112, 255, 1) 79%,
+    rgba(213, 137, 255, 1) 100%
+  );
+  border-radius: 3px;
+  animation-name: keyname;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation: ease-in-out; */
+}
+
+@keyframes keyname {
+  0% {
+    opacity: 0.5;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+/* ========결과======== */
+input {
+  margin-bottom: 20px;
+}
