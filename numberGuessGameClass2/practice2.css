@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+h1,
+#time,
+#click_button {
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
