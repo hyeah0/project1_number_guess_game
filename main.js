@@ -73,6 +73,7 @@ function replay(){
     chances = 5;
     userNum.value="";
     play.disabled=false;
+    randomNum();
 
     console.log("배열 삭제 전" + history.length);
     history.splice(0,history.length);
