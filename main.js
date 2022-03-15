@@ -28,7 +28,7 @@ userNum.addEventListener("focus",function(){userNum.value=""});
 reset.addEventListener("click",replay);
 
 function playGame(){
-    let userNumValue = userNum.value;
+    let userNumValue = parseInt(userNum.value);
 
     //-----유효성검사----//
     if(userNumValue<1 || userNumValue>100){
